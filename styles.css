@@ -1,0 +1,114 @@
+.feedback-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid gray;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form h2 {
+    font-size: 24px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.feedback-form p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.feedback-form .form-group {
+    margin-bottom: 15px;
+}
+
+.feedback-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: gray;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea,
+.feedback-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.feedback-form input[type="text"]:focus,
+.feedback-form input[type="email"]:focus,
+.feedback-form textarea:focus,
+.feedback-form select:focus {
+    border-color: gray;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.feedback-form .btnS {
+    background-color: white;
+    color: black;
+    border: solid black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.feedback-form .btnS:hover {
+    background-color: gray;
+    color: white;
+}
+
+.navigation-iconsH {
+    margin-top: 1px;
+    margin-left: 410px;
+    }
+    
+    .navigation-iconsH a {
+    margin: 0 10px;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+    }
+    
+    .navigation-iconsH a:hover {
+    color: gray;
+    }
+
+    .footer {
+    padding: 10px 0;
+    background-color: #454546;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px; /* Increase font size */
+}
+
+.social-icons a:hover {
+    color: gray;
+}

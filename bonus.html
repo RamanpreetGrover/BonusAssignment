@@ -6,6 +6,14 @@
     </head>
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+            function showMessage(event) {
+                event.preventDefault();
+                alert("Thank you for your feedback!");
+                // Optionally, you can also clear the form fields here
+                document.getElementById('feedbackForm').reset();
+            }
+        </script>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">TechConXperience</a>
@@ -121,5 +129,96 @@
             Locations
             <small class="text-body-secondary">More Coming Soon</small>
           </h3>
+          <div class="list-group">
+            <a href="www.canada.ca" class="list-group-item list-group-item-action active" aria-current="true">
+              Toronto
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">Calgary</a>
+            <a href="#" class="list-group-item list-group-item-action">Montreal</a>
+            <a href="#" class="list-group-item list-group-item-action">Regina</a>
+            <a class="list-group-item list-group-item-action disabled" aria-disabled="true">More Locations Soon</a>
+          </div>
+          <h3>
+            Speakers
+            <small class="text-body-secondary">More Joining Soon</small>
+          </h3>
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="women_in_tech_global_conference_voices_2022_speaker_jyo_shukla.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First Speaker</h5>
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="archana_maliyackal_1.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second Speaker</h5>
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="69dc71dd-1c23-4a2d-b314-cf1ce4bd1248_0_0_0_0_0_0_0.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third Speaker</h5>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <h4 id="scrollspyHeading4">Feedback Form</h4>
+    <div class="feedback-form">
+        <h2>We Value Your Feedback</h2>
+        <p>
+            We strive to provide the best possible tech conference experience and your feedback helps us understand what we're doing right and where we can improve. Please take a moment to share your thoughts with us.
+        </p>
+        <form action="submit_feedback.php" method="post">
+            <div class="form-group">
+                <label for="name">Name (optional):</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email (optional):</label>
+                <input type="email" id="email" name="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label for="feedback">Your Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Your feedback here..." required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="rating">Rate Our Service:</label>
+                <select id="rating" name="rating">
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="average">Average</option>
+                    <option value="poor">Poor</option>
+                </select>
+            </div>
+            <button type="submit" class="btnS" onclick="showMessage(event)">Submit Feedback</button>
+        </form>
+    </div>    
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="Access.html" target="_blank" aria-label="Disability"><i class="fab fa-accessible-icon"></i></a>
+        </div>
+    </footer>
     </body>
 </html>
